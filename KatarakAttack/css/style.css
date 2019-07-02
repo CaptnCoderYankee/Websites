@@ -1,0 +1,52 @@
+html
+{
+  scroll-behavior:smooth;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.coreImage
+{
+  background-color: #272727;
+  padding: 20;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+
+.smallerText 
+{
+  font-size: 1em;
+}
+
+.grayBG
+{
+  background-color: #232323;
+}
+
+.popupcontainer
+{
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}                                                                                                                                      

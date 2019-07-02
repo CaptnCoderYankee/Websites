@@ -1,0 +1,144 @@
+footer {
+	width: 100 % ;
+	position: relative;
+	height: 500px;
+	color:  # 212121;
+	overflow: hidden
+}
+footer::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100 % ;
+	height: 100 % ;
+	background - color:  # f1f5f5;
+	-webkit - transform - origin: 50 % 0;
+	-moz - transform - origin: 50 % 0;
+	-ms - transform - origin: 50 % 0;
+	-o - transform - origin: 50 % 0;
+	transform - origin: 50 % 0;
+	-webkit - transition: -webkit - transform 0.62s cubic - bezier(.7, .3, 0, 1);
+	-moz - transition: -moz - transform 0.62s cubic - bezier(.7, .3, 0, 1);
+	transition: transform 0.62s cubic - bezier(.7, .3, 0, 1)
+}
+footer::after {
+	content: '';
+	background: url(.. / img / figures / tinified / footer - rock.png)no - repeat center center / 100 % ;
+	width: 175px;
+	height: 450px;
+	position: absolute;
+	bottom: 0;
+	left: 50 % ;
+	margin - left: -90px;
+	-webkit - transition: 0.95s cubic - bezier(1, 0, 0, 1);
+	-moz - transition: 0.95s cubic - bezier(1, 0, 0, 1);
+	transition: 0.95s cubic - bezier(1, 0, 0, 1)
+}
+footer.footer - social {
+	margin - top: -1px
+}
+footer.toyfight - logo - flat {
+	margin - top: -200px;
+	-webkit - transition: 0.65s cubic - bezier(.52, .01, .16, 1)0.2s;
+	-moz - transition: 0.65s cubic - bezier(.52, .01, .16, 1)0.2s;
+	transition: 0.65s cubic - bezier(.52, .01, .16, 1)0.2s
+}
+footer.footer - footer {
+	width: 94 % ;
+	background - color:  # fff;
+	padding: 15px 3 % 16px;
+	-webkit - transition: 0.65s cubic - bezier(.52, .01, .16, 1)0.73s;
+	-moz - transition: 0.65s cubic - bezier(.52, .01, .16, 1)0.73s;
+	transition: 0.65s cubic - bezier(.52, .01, .16, 1)0.73s
+}
+footer.footer - footer cite {
+	display: block;
+	-webkit - transition: 0.35s cubic - bezier(.52, .01, .16, 1);
+	-moz - transition: 0.35s cubic - bezier(.52, .01, .16, 1);
+	transition: 0.35s cubic - bezier(.52, .01, .16, 1)
+}
+footer[data - active = "on"]::before {
+	-webkit - transform - origin: 50 % 0 % ;
+	-moz - transform - origin: 50 % 0 % ;
+	-ms - transform - origin: 50 % 0 % ;
+	-o - transform - origin: 50 % 0 % ;
+	transform - origin: 50 % 0 %
+}
+footer[data - active = "on"]::after {
+	-webkit - transition - delay: 0.25s;
+	-moz - transition - delay: 0.25s;
+	transition - delay: 0.25s
+}
+footer[data - active = "off"].toyfight - logo - flat {
+	opacity: 0;
+	-webkit - transform: translateY(20 % );
+	-moz - transform: translateY(20 % );
+	-ms - transform: translateY(20 % );
+	-o - transform: translateY(20 % );
+	transform: translateY(20 % )
+}
+footer[data - active = "off"]::after {
+	-webkit - transform: translateY(105 % );
+	-moz - transform: translateY(105 % );
+	-ms - transform: translateY(105 % );
+	-o - transform: translateY(105 % );
+	transform: translateY(105 % )
+}
+footer[data - active = "off"].footer - footer {
+	-webkit - transform: translateY(105 % );
+	-moz - transform: translateY(105 % );
+	-ms - transform: translateY(105 % );
+	-o - transform: translateY(105 % );
+	transform: translateY(105 % );
+	-webkit - transition - delay: 0s;
+	-moz - transition - delay: 0s;
+	transition - delay: 0s
+}
+footer ul li: nth - child(1) {
+	float: left
+}
+footer ul li: nth - child(2) {
+	float: right;
+	display: -webkit - box;
+	display: -moz - box;
+	display: box;
+	display: -webkit - flex;
+	display: -moz - flex;
+	display: -ms - flexbox;
+	display: flex;
+	-webkit - box - orient: horizontal;
+	-moz - box - orient: horizontal;
+	box - orient: horizontal;
+	-webkit - flex - direction: row;
+	-moz - flex - direction: row;
+	flex - direction: row;
+	-ms - flex - direction: row;
+	-webkit - box - pack: end;
+	-moz - box - pack: end;
+	box - pack: end;
+	-webkit - justify - content: flex - end;
+	-moz - justify - content: flex - end;
+	-ms - justify - content: flex - end;
+	-o - justify - content: flex - end;
+	justify - content: flex - end;
+	-ms - flex - pack: end
+}
+footer ul li: nth - child(2)a {
+	margin: 0.3vw
+}
+footer.condensed {
+	height: 52px
+}
+ @ media only screen and(max - width: 800px) {
+	footer.condensed {
+		height: auto
+	}
+}
+footer.condensed[data - active = "off"].footer - footer, footer.condensed[data - active = "on"].footer - footer {
+	-webkit - transform: translateY(0);
+	-moz - transform: translateY(0);
+	-ms - transform: translateY(0);
+	-o - transform: translateY(0);
+	transform: translateY(0)
+}
